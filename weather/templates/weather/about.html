@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+
+    <style>
+        .abt{
+            font-size: 17px;
+            color: #808080;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .custom-nav{
+            height: 110px;
+            background-color: #00cc99;
+        }
+
+        h2{
+            color: white;
+            padding: 33px;
+            font-size: 30px;
+            margin-left: 90px;
+        }
+
+        h3{
+            text-align: right;
+            margin-right: 70px;
+            margin-top: -73px;
+            font-size: 22px;
+            color: white;
+        }
+
+        .custom-card {
+            align-content: center;
+            margin-top: 190px;
+            margin-left: 470px;
+        }
+
+        .cust-footer{
+            background-color: #e6e6e6;
+            height: 110px;
+            margin-top: 310px;
+            padding: 47px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="custom-nav">
+        <a href="{% url 'home' %}"><h2>WeatherApp</h2></a>
+        <a href="{% url 'weather:about' %}"><h3>About</h3></a>
+    </nav>
+
+    <div class="abt">
+        This app is created by Ishwar.
+        TechStack - html, css, django.
+    </div>
+
+    <!-- Footer -->
+    <footer class="cust-footer">
+        Created by Ishwar
+    </footer>
+
+</body>
+</html>
